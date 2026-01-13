@@ -1,0 +1,33 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/ubuntu/.cache/dune/db
+# Workspace root: /home/ubuntu/Home/496/PLaF-main/src/checked
+# Auto-detected concurrency: 2
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/ubuntu/Home/496/PLaF-main/src/checked/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_bf1e05_output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/checker.ml) > _build/default/lib/.checked.objs/checked__Checker.impl.d
+> File "lib/checker.ml", line 74, characters 15-19:
+> 74 |         return type
+>                     ^^^^
+> Error: Syntax error: ')' expected
+> File "lib/checker.ml", line 72, characters 8-9:
+> 72 |         (match List.assoc_opt id reco with
+>              ^
+>   This '(' might be unmatched
+[2]
