@@ -1,0 +1,16 @@
+# dune ut
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/ubuntu/.cache/dune/db
+# Workspace root: /home/ubuntu/Home/496/PLaF-main/src/implicit-refs
+# Auto-detected concurrency: 2
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_d971ae_output
